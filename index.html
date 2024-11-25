@@ -1,34 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<img src="logo-ucsp.png" alt="Descripción de la imagen" width="300">
-<style>
-        body {
-            background-color: #f0f8ff;
-            background-image: url('https://wallpapercave.com/wp/wp11405457.jpg');
-            background-size: cover;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #4CAF50;
-            text-shadow: 2px 2px #ddd;
-        }
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        img {
-            border: 2px solid #ddd;
-            border-radius: 10px;
-        }
-</style>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,22 +7,115 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        header {
             margin-top: 50px;
         }
-        p {
+        header img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        header p {
+            font-size: 1rem;
             color: #666;
+        }
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px auto;
+            max-width: 1000px;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            color: #444;
+            text-shadow: 1px 1px 2px #aaa;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            max-width: 400px;
+            text-align: left;
+        }
+        .card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            margin: 50px auto;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        footer h2 {
+            font-size: 1.5rem;
+        }
+        footer p {
+            color: #ddd;
+            line-height: 1.5;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Esta es mi primera página web creada en GitHub Pages.</p>
+
+    <header>
+        <img src="logo-ucsp.png" alt="Logo UCSP">
+        <h1>Bienvenidos a mi página web</h1>
+        <p>Soy un estudiante de la Universidad Católica San Pablo de la carrera de Contabilidad, tengo 22 años, encantado.</p>
+        <img src="foto.png" alt="Foto del autor" style="max-width: 100px; border-radius: 50%;">
+    </header>
+
+    <section>
+        <div class="card">
+            <h2 class="section-title">ESTUDIOS</h2>
+            <img src="logo-ucsp.png" alt="Logo UCSP">
+            <p>Actualmente estoy haciendo cursos de distintos semestres pero oficialmente estoy en segundo semestre de la carrera de Contabilidad.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title">INFORMACIÓN PERSONAL</h2>
+            <img src="1802786.png" alt="Icono información">
+            <p>
+                <strong>F. nacimiento:</strong> 09/03/2002<br>
+                <strong>Correo electrónico:</strong> alexander.vildoso@ucsp.edu.pe<br>
+                <strong>Nacionalidad:</strong> Peruano
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Cursos</h2>
+        <p>
+            CÁLCULO EN VARIAS VARIABLES<br>
+            CONTABILIDAD II<br>
+            FUNDAMENTOS DE ADMINISTRACIÓN<br>
+            HISTORIA DE OCCIDENTE II<br>
+            INTRODUCCIÓN DE CIENCIA DE LA COMPUTACIÓN<br>
+            LIDERAZGO<br>
+            PENSAMIENTO CRÍTICO E INNOVACIÓN
+        </p>
+
+        <h2>Compañeros</h2>
+        <p>
+            <a href="https://diegoguzmanucsp.s3.us-east-1.amazonaws.com/index.html" target="_blank">DIEGO MARTÍN</a><br>
+            <a href="https://paolojoaquingomezmanrique.github.io/ICC/" target="_blank">PAOLO GÓMEZ</a>
+        </p>
+    </footer>
+
 </body>
 </html>
